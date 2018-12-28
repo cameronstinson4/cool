@@ -1,0 +1,23 @@
+@import "../theme";
+
+.link {
+  text-decoration: none;
+  color: $app_primary_color;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}
+
+.titleList {
+  text-decoration: none;    list-style-type: none;
+}
+
+.titleListItem {
+  margin: 0;
+}
+
+.smallMargin {
+  margin: 0.5rem;
+}

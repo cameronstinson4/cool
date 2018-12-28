@@ -1,0 +1,28 @@
+@import "../../theme";
+
+.footerContainer {
+  margin: $body_content_margin;
+}
+
+.contactItem {
+  color: $app_dark_color;
+}
+
+.contactLink {
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  color: $app_dark_color;
+}
+
+.contactLink:hover {
+  text-decoration: underline !important;
+}
+
+@media only screen and (max-width: $app_media_query) {
+
+  .contactLink {
+    font-size: $mobile_monospace_font_size;
+    font-weight: $mobile_monospace_font_weight;
+  }
+
+}

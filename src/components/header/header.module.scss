@@ -1,0 +1,77 @@
+@import "../../theme";
+
+.header {
+  background-color: $app_dark_color;
+  width: 100%;
+}
+
+.headerContainer {
+  margin: $body_content_margin;
+  padding: 0 0 0.01rem 0;
+
+}
+
+.link {
+  color: $app_primary_color;
+  text-decoration: none;
+}
+
+.largeText {
+  font-size: $large_font_size;
+
+}
+
+.navFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-family: 'Courier New', Courier, monospace;
+  color: $app_secondary_color;
+}
+
+.navItem {
+  margin: 1rem 1rem;
+  color: $app_primary_color;
+  text-decoration: none;
+}
+
+.navFlexBox:first-child {
+  margin: 0rem -1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: $app_secondary_color;
+}
+
+.navLink:hover {
+  text-decoration: underline !important;
+}
+
+.activeNavLink {
+  text-decoration: underline !important;
+}
+
+@media only screen and (max-width: $app_media_query) {
+
+  .largeText {
+    font-size: $mobile_large_font_size;
+  }
+
+  .navItem {
+    font-size: $mobile_monospace_font_size;
+    font-weight: $mobile_monospace_font_weight;
+  }
+
+}
+
+@media only screen and (min-width: $app_media_query_high) {
+
+  .largeText {
+    font-size: $largedisplay_large_font_size;
+  }
+
+  .navItem {
+    font-size: $largedisplay_monospace_font_size;
+  }
+}
