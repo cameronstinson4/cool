@@ -17,9 +17,6 @@ class FactorioPage extends Component {
 
     render = () => (
         <Layout>
-            <h1>Here's a button that turns off the factorio server</h1>
-            <p>Please don't touch it</p>
-
             <button onClick={this.activateLasers}>
                 Activate Lasers
             </button>
