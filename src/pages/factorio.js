@@ -1,0 +1,30 @@
+import React from 'react'
+import axios from 'axios'
+import Layout from '../components/layout/layout'
+
+class FactorioPage extends Component {
+    constructor(props) {
+        super(props)
+        this.response = {};
+
+    }
+
+    activateLasers() {
+        axios.get('https://ep4ajtvp72.execute-api.us-east-1.amazonaws.com/default/StopEC2Instances')
+            .then(response => console.log(response))
+    }
+
+    render = () => (
+        <Layout>
+            <h1>Here's a button that turns off the factorio server</h1>
+            <p>Please don't touch it</p>
+
+            <button onClick={activateLasers}>
+                Activate Lasers
+            </button>
+            <p>{this.response}</p>
+        </Layout>
+    )
+}
+
+export default FactorioPage

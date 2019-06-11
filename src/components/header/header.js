@@ -47,6 +47,11 @@ let Header = ({ large }) => (
                 className={`${styles.navLink}`}
                 activeClassName={`${styles.activeNavLink}`}>shop</Link>
             </div>
+            <div className={`${styles.navItem}`}>
+              <Link to="/factorio/"
+                className={`${styles.navLink}`}
+                activeClassName={`${styles.activeNavLink}`}>factorio</Link>
+            </div>
           </div>
         </div>
 
