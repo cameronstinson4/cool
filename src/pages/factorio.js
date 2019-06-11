@@ -6,13 +6,13 @@ import Layout from '../components/layout/layout'
 class FactorioPage extends Component {
     constructor(props) {
         super(props)
-        this.response = {};
+        this.state = {serverResponse: ""};
 
     }
 
     activateLasers() {
         axios.get('https://8cjemcrb4e.execute-api.us-east-1.amazonaws.com/default/StopEC2Instances')
-            .then(response => this.response = response)
+            .then(response => this.setState({ serverResponse: response}))
     }
 
     render = () => (
@@ -20,7 +20,7 @@ class FactorioPage extends Component {
             <button onClick={this.activateLasers}>
                 Activate Lasers
             </button>
-            <p>{this.response}</p>
+            <p>{this.state.serverResponse}</p>
         </Layout>
     )
 }
