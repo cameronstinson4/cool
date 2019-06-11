@@ -10,7 +10,7 @@ class FactorioPage extends Component {
     }
 
     activateLasers() {
-        axios.get('https://ep4ajtvp72.execute-api.us-east-1.amazonaws.com/default/StopEC2Instances')
+        axios.get('https://8cjemcrb4e.execute-api.us-east-1.amazonaws.com/default/StopEC2Instances')
             .then(response => console.log(response))
     }
 
