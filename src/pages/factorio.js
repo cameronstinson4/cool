@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Component } from "react"
 import axios from 'axios'
+
 import Layout from '../components/layout/layout'
 
 class FactorioPage extends Component {
@@ -11,7 +12,7 @@ class FactorioPage extends Component {
 
     activateLasers() {
         axios.get('https://8cjemcrb4e.execute-api.us-east-1.amazonaws.com/default/StopEC2Instances')
-            .then(response => console.log(response))
+            .then(response => this.response = response)
     }
 
     render = () => (
@@ -19,7 +20,7 @@ class FactorioPage extends Component {
             <h1>Here's a button that turns off the factorio server</h1>
             <p>Please don't touch it</p>
 
-            <button onClick={activateLasers}>
+            <button onClick={this.activateLasers}>
                 Activate Lasers
             </button>
             <p>{this.response}</p>
