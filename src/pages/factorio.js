@@ -12,6 +12,7 @@ class FactorioPage extends Component {
             instances: []
         };
         this.toggleServerStatus = this.toggleServerStatus.bind(this);
+        this.getServerStatus = this.getServerStatus.bind(this);
     }
 
     componentDidMount() {
@@ -33,7 +34,7 @@ class FactorioPage extends Component {
                     })
                 }
                 this.setState({ instances: instances })
-                setTimeout(this.getServerStatus(), 10000)
+                setTimeout(this.getServerStatus, 2000)
 
             })
     }
