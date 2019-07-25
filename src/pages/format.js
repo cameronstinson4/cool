@@ -116,7 +116,7 @@ class FormatPage extends Component {
 
                 <br></br>
 
-                <input type="submit" value="Convert" />
+                <input className={pageStyles.formSubmitButton} type="submit" value="Convert" />
 
             </form>
 
@@ -126,7 +126,7 @@ class FormatPage extends Component {
 
             <form onSubmit={this.copyToClipboard}>
 
-                <input type="submit" value="Copy to clipboard" />
+                <input className={pageStyles.formSubmitButton} type="submit" value="Copy to clipboard" />
 
             </form>
 

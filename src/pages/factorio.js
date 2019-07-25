@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import axios from 'axios'
 
+import pageStyles from './pages.module.scss'
 import Layout from '../components/layout/layout'
 
 class FactorioPage extends Component {
@@ -78,7 +79,7 @@ class FactorioPage extends Component {
                                 <input type="hidden" name="instance_id" value={instance.id} />
 
                             </label>
-                            <input type="submit" value={instance.status === "stopped" ? "Start" : "Stop"} />
+                            <input className={pageStyles.formSubmitButton} type="submit" value={instance.status === "stopped" ? "Start" : "Stop"} />
                         </form>
                     </div>
                 )

@@ -22,6 +22,14 @@
   margin: 0.5rem;
 }
 
+.formSubmitButton {
+  text-decoration: none;
+  color: $app_dark_color;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: $app_primary_color;
+  font-weight: 550;
+}
+
 .code {
   text-decoration: none;
   color: $app_dark_color;
