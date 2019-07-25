@@ -21,3 +21,15 @@
 .smallMargin {
   margin: 0.5rem;
 }
+
+.code {
+  text-decoration: none;
+  color: $app_dark_color;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 550;
+}
+
+.largeTextArea {
+  height: 15rem;
+  width: 50%;
+}
