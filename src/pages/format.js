@@ -30,7 +30,7 @@ class FormatPage extends Component {
 
     convertToFString(text) {
         let strArray = text.split('')
-        let output = "f'"
+        let output = "f'''"
 
         let inBrackets = 0
         let inString = false
@@ -93,7 +93,7 @@ class FormatPage extends Component {
             output += "}"
         }
 
-        return output + "\'"
+        return output + "'''"
     }
     copyToClipboard(event) {
         event.preventDefault();
