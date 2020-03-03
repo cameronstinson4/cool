@@ -26,12 +26,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require("sass"),
-      },
-    },
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
