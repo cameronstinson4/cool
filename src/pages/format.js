@@ -29,13 +29,16 @@ class FormatPage extends Component {
     }
 
     convertToFString(text) {
-        let output = "f'"
-        let inString = false
         let strArray = text.split('')
+        let output = "f'''"
+
+        let inBrackets = 0
+        let inString = false
         let inVar = false
         let strDelimeter = ""
 
         for (let i = 0; i < strArray.length; i++) {
+
             if (strArray[i] === "\'" || strArray[i] === "\"") {
                 if (inString) {
                     if (strDelimeter === strArray[i]) {
@@ -45,12 +48,18 @@ class FormatPage extends Component {
                         output += strArray[i]
                     }
                 }
+                else if (inBrackets > 0) {
+                    output += strArray[i]
+                }
                 else if (inVar) {
+
                     output = output.trim()
+
                     if (output[output.length - 1] === "+") {
                         output = output.substring(0, output.length - 1)
                         output = output.trim()
                     }
+
                     output += "}"
                     inVar = false
                     inString = true
@@ -65,6 +74,12 @@ class FormatPage extends Component {
                 output += strArray[i]
             }
             else if (inVar) {
+                if (/[\{\[\(]/.test(strArray[i])) {
+                    inBrackets += 1
+                }
+                else if (/[\}\]\)]/.test(strArray[i])) {
+                    inBrackets -= 1
+                }
                 output += strArray[i]
             }
             else if (strArray[i] !== '+' && !/\s/.test(strArray[i])) {
@@ -78,9 +93,8 @@ class FormatPage extends Component {
             output += "}"
         }
 
-        return output + "\'";
+        return output + "'''"
     }
-
     copyToClipboard(event) {
         event.preventDefault();
 
