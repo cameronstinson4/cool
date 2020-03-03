@@ -57,6 +57,11 @@ let Header = ({ large }) => (
                 className={`${styles.navLink}`}
                 activeClassName={`${styles.activeNavLink}`}>format</Link>
             </div>
+            <div className={`${styles.navItem}`}>
+              <Link to="/tax/"
+                className={`${styles.navLink}`}
+                activeClassName={`${styles.activeNavLink}`}>tax</Link>
+            </div>
           </div>
         </div>
 
