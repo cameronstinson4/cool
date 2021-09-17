@@ -67,7 +67,7 @@ class FactorioPage extends Component {
 
                         {instance.publicIp} : {instance.status}
                         <br></br>
-                        {instance.instanceType} : {instance.id}
+                        {instance.instanceType} : {instance.name}
                         <br></br>
 
                         <h4>Secret is required to alter instance state</h4>
