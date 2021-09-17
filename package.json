@@ -4,19 +4,20 @@
   "author": "Cameron Stinson",
   "dependencies": {
     "axios": "^0.21.1",
-    "gatsby": "^2.19.25",
-    "gatsby-image": "^2.2.42",
+    "gatsby": "^2.32.13",
+    "gatsby-cli": "^3.13.0",
+    "gatsby-image": "^2.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-manifest": "^2.2.42",
-    "gatsby-plugin-offline": "^3.0.35",
-    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-manifest": "^2.12.1",
+    "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sass": "2.1.29",
-    "gatsby-plugin-sharp": "^2.4.5",
-    "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-sharp": "^2.3.16",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "gatsby-plugin-sharp": "^2.14.4",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-sharp": "^2.12.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1"
   },
   "keywords": [
@@ -30,7 +31,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
-    "prettier": "*"
+    "prettier": "^2.4.1"
   },
   "repository": {
     "type": "git",
