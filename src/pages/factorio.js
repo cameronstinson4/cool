@@ -31,7 +31,8 @@ class FactorioPage extends Component {
                         id: instance,
                         status: response.data[instance].status,
                         publicIp: response.data[instance].public_ip_address,
-                        instanceType: response.data[instance].instance_type
+                        instanceType: response.data[instance].instance_type,
+                        name: response.data[instance].name
                     })
                 }
                 this.setState({ instances: instances })
